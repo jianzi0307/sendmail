@@ -13,13 +13,23 @@ use cmf\controller\AdminBaseController;
 
 class EmailController extends AdminBaseController
 {
-    public function index()
+    public function emailList()
     {
-        return $this->fetch('email:index');
+        return $this->fetch('email:emailList');
     }
 
-    public function add()
+    public function addEmailList()
     {
-        return $this->fetch('email:add');
+        return $this->fetch('email:addEmailList');
+    }
+
+    public function templateList()
+    {
+        return $this->fetch('email:templateList');
+    }
+
+    public function addTemplateList()
+    {
+        return $this->fetch('email:addTemplateList');
     }
 }
