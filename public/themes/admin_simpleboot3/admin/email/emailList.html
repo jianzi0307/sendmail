@@ -3,10 +3,10 @@
 <body>
 <div class="wrap js-check-wrap">
     <ul class="nav nav-tabs">
-        <li class="active"><a href="{:url('queue/index')}">{:lang('ADMIN_EMAIL_QUEUE')}</a></li>
-        <li><a href="{:url('queue/add')}">{:lang('ADMIN_EMAIL_QUEUE_ADD')}</a></li>
+        <li class="active"><a href="{:url('queue/index')}">{:lang('ADMIN_EMAIL_LIST')}</a></li>
+        <li><a href="{:url('email/addEmailList')}">{:lang('ADMIN_EMAIL_LIST_ADD')}</a></li>
     </ul>
-    <form action="{:url('queue/onAdd')}" method="post" class="margin-top-20">
+    <form action="{:url('email/addEmailListPost')}" method="post" class="margin-top-20">
         <table class="table table-hover table-bordered">
             <thead>
             <tr>
