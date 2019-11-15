@@ -28,8 +28,8 @@ class EmailController extends AdminBaseController
         return $this->fetch('email:templateList');
     }
 
-    public function addTemplateList()
+    public function addTemplate()
     {
-        return $this->fetch('email:addTemplateList');
+        return $this->fetch('email:addTemplate');
     }
 }
