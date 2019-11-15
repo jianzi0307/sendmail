@@ -11,7 +11,7 @@ namespace app\admin\controller;
 
 use cmf\controller\HomeBaseController;
 
-class EmailController extends HomeBaseController
+class QueueController extends HomeBaseController
 {
     public function index()
     {
