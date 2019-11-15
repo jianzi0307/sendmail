@@ -17,4 +17,9 @@ class EmailController extends AdminBaseController
     {
         return $this->fetch('email:index');
     }
+
+    public function add()
+    {
+        return $this->fetch('email:add');
+    }
 }

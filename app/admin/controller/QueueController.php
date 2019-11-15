@@ -17,4 +17,14 @@ class QueueController extends AdminBaseController
     {
         return $this->fetch('queue:index');
     }
+
+    public function add()
+    {
+        return $this->fetch('queue:add');
+    }
+
+    public function edit()
+    {
+        return $this->fetch('queue:add');
+    }
 }
