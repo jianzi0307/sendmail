@@ -9,9 +9,9 @@
 namespace app\admin\controller;
 
 
-use cmf\controller\HomeBaseController;
+use cmf\controller\AdminBaseController;
 
-class QueueController extends HomeBaseController
+class QueueController extends AdminBaseController
 {
     public function index()
     {

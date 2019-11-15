@@ -9,9 +9,9 @@
 namespace app\admin\controller;
 
 
-use cmf\controller\HomeBaseController;
+use cmf\controller\AdminBaseController;
 
-class EmailController extends HomeBaseController
+class EmailController extends AdminBaseController
 {
     public function index()
     {
