@@ -1,9 +1,9 @@
 <php>
     if (!function_exists('_get_system_widget')) {
-        function _get_system_widget($name){
+    function _get_system_widget($name){
 </php>
 <switch name="name">
-    <case value="CmfHub">
+    <case value="CmfHub_">
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title">交流方式</h3>
@@ -25,18 +25,11 @@
                 <h3 class="panel-title">开发手册</h3>
             </div>
             <div class="panel-body home-info">
-                <ul class="list-unstyled">
+                <ul class="list-unstyled" style="display:flex;flex-direction:row;align-items: center;">
                     <li>
                         <em>完全开发手册</em>
                         <span>
                             <a class="label label-success" href="http://www.thinkcmf.com/doc.html"
-                               target="_blank">立即阅读</a>
-                        </span>
-                    </li>
-                    <li>
-                        <em>常见问题手册</em>
-                        <span>
-                            <a class="label label-success" href="http://www.thinkcmf.com/faq.html"
                                target="_blank">立即阅读</a>
                         </span>
                     </li>
@@ -58,7 +51,7 @@
             </div>
         </div>
     </case>
-    <case value="MainContributors">
+    <case value="MainContributors_">
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title">主要贡献者</h3>
@@ -80,7 +73,7 @@
             </div>
         </div>
     </case>
-    <case value="Contributors">
+    <case value="Contributors_">
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title">贡献者</h3>
@@ -111,7 +104,7 @@
     </case>
 </switch>
 <php>
-        }
+    }
     }
 </php>
 
@@ -266,12 +259,12 @@
             mirrorContainer: document.body,    // set the element that gets mirror elements appended
             ignoreInputTextSelection: true     // allows users to select input text, see details below
         }).on('drop', function (el, target, source, sibling) {
-            var $target          = $(target);
-            var targetClasses    = $target.attr('class');
+            var $target = $(target);
+            var targetClasses = $target.attr('class');
             var targetDataWidget = $target.data('widget');
             var targetDataSystem = $target.data('system');
-            var $source          = $(source);
-            var sourceClasses    = $source.attr('class');
+            var $source = $(source);
+            var sourceClasses = $source.attr('class');
             var sourceDataWidget = $source.data('widget');
             var sourceDataSystem = $source.data('system');
             $(source).append($(target).find('.dashboard-box').not('.gu-transit'));
@@ -325,7 +318,7 @@
     //获取官方通知
     $.getJSON("//www.thinkcmf.com/service/sms_jsonp.php?lang={$lang_set}&v={$thinkcmf_version}&callback=?",
         function (data) {
-            var tpl      = '<li><em class="title"></em><span class="content"></span></li>';
+            var tpl = '<li><em class="title"></em><span class="content"></span></li>';
             var $notices = $("#thinkcmf-notices");
             $notices.empty();
             if (data.length > 0) {
