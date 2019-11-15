@@ -3,10 +3,10 @@
 <body>
 <div class="wrap js-check-wrap">
     <ul class="nav nav-tabs">
-        <li class="active"><a href="{:url('rbac/index')}">{:lang('ADMIN_EMAIL_QUEUE')}</a></li>
-        <li><a href="{:url('rbac/roleAdd')}">{:lang('ADMIN_EMAIL_QUEUE_ADD')}</a></li>
+        <li class="active"><a href="{:url('rqueue/index')}">{:lang('ADMIN_EMAIL_QUEUE')}</a></li>
+        <li><a href="{:url('queue/add')}">{:lang('ADMIN_EMAIL_QUEUE_ADD')}</a></li>
     </ul>
-    <form action="{:url('Rbac/listorders')}" method="post" class="margin-top-20">
+    <form action="{:url('queue/onAdd')}" method="post" class="margin-top-20">
         <table class="table table-hover table-bordered">
             <thead>
             <tr>
